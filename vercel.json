@@ -1,0 +1,9 @@
+{
+    "rewrites": [
+      {
+        "source": "/api/(.*)",
+        "destination": "https://crud-django-pya4.onrender.com/api/$1"
+      }
+    ]
+  }
+  
