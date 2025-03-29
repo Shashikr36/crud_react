@@ -7,7 +7,7 @@ const LandingPage = () => {
 
   // Fetch data from the Django API
   useEffect(() => {
-    fetch('/api/items/')
+    fetch('https://crud-django-pya4.onrender.com/api/items/')
       .then(response => response.json())
       .then(data => setItems(data))
       .catch(error => console.error('Error fetching items:', error));

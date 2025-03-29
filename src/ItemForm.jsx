@@ -13,7 +13,7 @@ const ItemForm = ({ initialData = {}, onSuccess }) => {
     try {
       // If there's an id, update; otherwise, create
       const method = initialData.id ? 'PUT' : 'POST';
-      const url = initialData.id ? `/api/items/${initialData.id}/` : '/api/items/';
+      const url = initialData.id ? `https://crud-django-pya4.onrender.com//api/items/${initialData.id}/` : '/api/items/';
       const response = await fetch(url, {
         method: method,
         headers: {
